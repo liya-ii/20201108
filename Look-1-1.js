@@ -2,7 +2,7 @@ const $ = new Env("中青看点任务")
 
 const notify = $.isNode() ? require('./sendNotify') : '';
 
-const zqbody = require("./Coho-1-1/zqrw1.json");
+const zqbody = require("./Cohc-1-1/zqrw1.json");
 
 let gainscore = 0, lookscore = 0, searchscore = 0;
 let startArr = zqbody.browdatas;

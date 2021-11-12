@@ -1149,6 +1149,68 @@ function openbox() {
 }
 
 
+//签到
+function do_sign() {
+  return new Promise(resolve => {
+    $.post(basic(basicApi,signBody), async(err, resp, data) => {
+      try {
+        if (err) {
+          console.log(`${JSON.stringify(err)}`)
+          console.log(resp)
+          console.log(`${$.name} API请求失败，请检查网路重试`)
+        } else {
+          if (safeGet(data)) {
+            const result = JSON.parse(data);
+			//console.log(`签到结果：${JSON.stringify(result)}\n`)
+			if (result.success == true) {
+				console.log(`签到成功，获得 ${result.items.score} 金币！`)
+				console.log(`开始执行 ${result.items.button.title} ---`)
+				await $.wait(30000);
+				await do_sign2();
+          } else {
+			  console.log(`今日已签到:${JSON.stringify(result)}\n`)
+        }
+      }
+    }
+  }	catch (e) {
+     $.logErr(e, resp)
+     } finally {
+        resolve();
+      }
+	})
+  })
+}
+
+ //签到翻倍
+ function do_sign2() {
+  return new Promise(resolve => {
+    $.post(basic(doubleSignApi,doubleSignBody), (err, resp, data) => {
+      try {
+        if (err) {
+          console.log(`${JSON.stringify(err)}`)
+          console.log(resp)
+          console.log(`${$.name} API请求失败，请检查网路重试`)
+        } else {
+          if (safeGet(data)) {
+            const result = JSON.parse(data);
+			//console.log(`签到翻倍结果：${JSON.stringify(result)}\n`)
+			if (result.success == true) {
+				console.log(`签到翻倍成功，获得 ${result.items.score} 金币！ `)
+			} else {
+				console.log(`签到翻倍失败:${JSON.stringify(result)}\n`)
+			}
+          }
+        }
+      } catch (e) {
+        $.logErr(e, resp)
+      } finally {
+        resolve();
+      }
+    })
+  })
+}
+
+
 
 //basic
 function basic(api,body) {

@@ -44,7 +44,7 @@ if (jc_cookie) {
     }
 } else if($.isNode()){
     var fs = require("fs");
-    jc_cookie = fs.readFileSync("jc_cookie.txt", "utf8");
+    jc_cookie = fs.readFileSync("Any-1-1/jc_cookie.txt", "utf8");
     if (jc_cookie !== `undefined`) {
         jc_cookies = jc_cookie.split("\n");
     } else {
@@ -70,7 +70,7 @@ if (jclookStartbody) {
     }
 } else if($.isNode()){
     var fs = require("fs");
-    jclookStartbody = fs.readFileSync("jclookStartbody.txt", "utf8");
+    jclookStartbody = fs.readFileSync("Any-1-1/jc_lookStartbody.txt", "utf8");
     if (jclookStartbody !== `undefined`) {
         jclookStartbodys = jclookStartbody.split("\n");
     } else {

@@ -59,20 +59,20 @@ Object.keys(jc_cookies).forEach((item) => {
         jc_cookieArr.push(jc_cookies[item])
     }
 })
-if (jclookStartbody) {
-    if (jclookStartbody.indexOf("&") == -1) {
-        jclookStartbodyArr.push(jclookStartbody)
-    } else if (jclookStartbody.indexOf("&") > -1) {
-        jclookStartbodys = jclookStartbody.split("&")
-    } else if (process.env.jclookStartbody && process.env.jclookStartbody.indexOf('&') > -1) {
-        jclookStartbodyArr = process.env.jclookStartbody.split('&');
+if (lookStartbody) {
+    if (lookStartbody.indexOf("&") == -1) {
+        lookStartbodyArr.push(lookStartbody)
+    } else if (lookStartbody.indexOf("&") > -1) {
+        lookStartbodys = lookStartbody.split("&")
+    } else if (process.env.lookStartbody && process.env.lookStartbody.indexOf('&') > -1) {
+        lookStartbodyArr = process.env.lookStartbody.split('&');
         console.log(`您选择的是用"&"隔开\n`)
     }
 } else if($.isNode()){
     var fs = require("fs");
-    jclookStartbody = fs.readFileSync("Any-1-1/jc_lookStartbody.txt", "utf8");
-    if (jclookStartbody !== `undefined`) {
-        jclookStartbodys = jclookStartbody.split("\n");
+    lookStartbody = fs.readFileSync("Any-1-1/jc_lookStartbody.txt", "utf8");
+    if (lookStartbody !== `undefined`) {
+        lookStartbodys = lookStartbody.split("\n");
     } else {
         $.msg($.name, '【提示】请点击看看赚某一任务获取body', '不知道说啥好', {
             "open-url": "给您劈个叉吧"
@@ -80,9 +80,9 @@ if (jclookStartbody) {
         $.done()
     }
 }
-Object.keys(jclookStartbodys).forEach((item) => {
-    if (jclookStartbodys[item] && !jclookStartbodys[item].startsWith("#")) {
-        jclookStartbodyArr.push(jclookStartbodys[item])
+Object.keys(lookStartbodys).forEach((item) => {
+    if (lookStartbodys[item] && !lookStartbodys[item].startsWith("#")) {
+        lookStartbodyArr.push(lookStartbodys[item])
     }
 })
 

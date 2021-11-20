@@ -9,7 +9,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: Any-看看赚-1
+    types: Aya-看看赚-1
 jobs:
   build:
 
@@ -27,4 +27,4 @@ jobs:
       - name: '运行 【晶彩看看赚-1-1】'
         run: |
           
-          node Any-看看赚-1.js
+          node Aya-看看赚-1.js

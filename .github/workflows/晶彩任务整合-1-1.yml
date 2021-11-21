@@ -27,7 +27,7 @@ jobs:
       - name: '运行 【晶彩任务整合-1-1】'
         run: |
           
-          node Aya-晶彩基本-1.js
+          node Aya-基本任务-1.js
         env:
         
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}

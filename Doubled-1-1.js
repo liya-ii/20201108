@@ -30,10 +30,10 @@ async function do_ydfb(){
 		tsxx += "=================================\n";
         await ydfb(zqbody)
     }
-    //$.msg($.name, "🏠阅读翻倍：", `${tsxx}`);
-    //if ($.isNode()) {
-   //     await notify.sendNotify("🏠阅读翻倍", `${tsxx}`);
-   // }
+    $.msg($.name, "🏠阅读翻倍：", `${tsxx}`);
+    if ($.isNode()) {
+        await notify.sendNotify("🏠阅读翻倍", `${tsxx}`);
+    }
 }
 
 function ydfb(zqbody,timeout = 0) {

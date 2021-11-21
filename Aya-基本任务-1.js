@@ -1,4 +1,5 @@
 const $ = new Env('晶彩看点-基本任务');
+const notify = $.isNode() ? require('./sendNotify') : '';
 
 const hour = new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60 * 1000 + 8 * 60 * 60 * 1000).getHours();
 const minute = new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60 * 1000 + 8 * 60 * 60 * 1000).getMinutes();
@@ -530,7 +531,7 @@ function do_syhb() {
 			if (result.success == true) {
 				console.log(`\n领取首页红包成功，获得 ${result.items.score} 金币！`)
           } else {
-			  console.log(`\n领取首页红包失败:${JSON.stringify(result)}`)
+			  console.log(`\n领取首页红包失败:${JSON.stringify(result.message)}`)
         }
       }
     }

@@ -1,4 +1,4 @@
-const $ = new Env("阅读翻倍申请");
+const $ = new Env("");
 const notify = $.isNode() ? require('./sendNotify') : '';
 let bodyVal="",tsxx = "",zqbody="";
 
@@ -46,10 +46,10 @@ function ydfb(zqbody,timeout = 0) {
         }
         $.get(url, async (err, resp, data) => {
             try {
-                console.log(data);
+                //console.log(data);
                 const result = JSON.parse(data)
                 if(result.success == true){
-                    console.log('阅读翻倍:'+result.msg);
+                    console.log('阅读翻倍:'+result.message);
                     tsxx += `🔺${result.message}\n`;
                 }else{
                     console.log('翻倍失败:'+result.message);

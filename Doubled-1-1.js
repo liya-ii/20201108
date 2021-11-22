@@ -24,7 +24,7 @@ async function do_ydfb(){
         time1 = time1.substr(0, 10);
         bodyVal = zq_cookieArr[k];
         zqbody= bodyVal+'&request_time=' + time1;
-        zqbody='&device_brand=xfdg&device_id=cc7dgdsgfsz83e&device_model=1gx&device_platform=android&device_type=android&inner_version=202107261526&mi=0&openudid=cc7dgdsgfsz83e&os_api=27&os_version=bdftgsdfga&phone_network=WIFI&phone_sim=1' +zqbody;
+        zqbody='&device_id=55778744&device_model=SM919&device_platform=android&device_type=android&dpi=560&inner_version=202108181534&language=zh-CN&memory=5&mi=0&mobile_type=1&net_type=2&network_type=4G&openudid=6f9c21802e9e7d69&os_api=23&os_version=MXB48T%20release-keys&request_time=1636905848&resolution=1440x2560&rom_version=MXB48T%20release-keys&s_ad=aFbVGOYyXwIo%3D_bdT7wAf9shC-jFaSRThTaN0uhLjsnFpe&s_im=jYFg4QJ5A6eY%3DchJevhO619_tkVb8-aLNRQ%3D%3D&sim=1' +zqbody;
         console.log(`------------第 ${k + 1} 个账号申请阅读翻倍`)
 		tsxx += "账号" + (k + 1) + "任务执行信息：\n";
 		tsxx += "=================================\n";

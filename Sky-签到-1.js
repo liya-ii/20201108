@@ -92,7 +92,7 @@ let withdrawSuccess = 0
 //通知
 async function showmsg() {
     
-    //notifyBody = jsname + "运行通知\n\n" + notifyStr
+    notifyBody = notifyStr
     
     if (notifyFlag != 1) {
         console.log(notifyBody);

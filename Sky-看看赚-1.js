@@ -1,10 +1,3 @@
-/*
-安卓：晶彩天气(v8.3.7)
-
-此脚本负责：
-完成看看赚任务，删除重复和失效的body
-*/
-
 const jsname = '晶彩天气看看赚'
 const $ = Env(jsname)
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1

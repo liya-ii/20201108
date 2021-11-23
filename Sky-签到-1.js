@@ -46,7 +46,7 @@ let withdrawSuccess = 0
             await toGetReward(rewardBody,i)
             await $.wait(2000)
         }
-        /*
+        
         numBoxbody = jctqSignDoubleBodyArr.length
         console.log(`找到${numBoxbody}个签到翻倍body，观看32秒视频后开始领取下一个`)
         
@@ -55,7 +55,7 @@ let withdrawSuccess = 0
             await $.wait(32000)
             await toDouble(rewardBody)
         }
-        */
+        
         if(jctqWithdrawFlag > 0 && jctqWithdrawArr.length > 0) {
             numBoxbody = jctqWithdrawArr.length
             console.log(`找到${numBoxbody}个提现body`)
@@ -92,7 +92,7 @@ let withdrawSuccess = 0
 //通知
 async function showmsg() {
     
-    notifyBody = jsname + "运行通知\n\n" + notifyStr
+    //notifyBody = jsname + "运行通知\n\n" + notifyStr
     
     if (notifyFlag != 1) {
         console.log(notifyBody);
@@ -192,8 +192,6 @@ async function toGetReward(rewardBody,idx) {
             let signStr = ''
             if(result.items.title && result.items.title.indexOf('签到成功') > -1) signStr = '签到'
             console.log(`领取第${idx+1}个奖励成功，${signStr}获得${result.items.score}金币`)
-            await $.wait(32000)
-            await toDouble(rewardBody)
         }
     } else {
         console.log(`领取第${idx+1}个奖励失败：${result.message}`)

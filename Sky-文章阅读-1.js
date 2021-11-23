@@ -1,10 +1,3 @@
-/*
-安卓：晶彩天气(v8.3.7)
-
-此脚本负责：
-阅读文章，浏览视频
-*/
-
 const jsname = '晶彩天气文章视频'
 const $ = Env(jsname)
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1

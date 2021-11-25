@@ -801,7 +801,7 @@ async function all() {
                     }
                 }
 
-            }
+            }/*
 
 
 
@@ -837,7 +837,7 @@ async function all() {
                     }
                 }
 
-            }
+            }*/
 
 
             K = `余额提醒🚩`;
@@ -857,8 +857,8 @@ async function all() {
 
                 } else if (TXTX == 0) {
 
-                    console.log(`余额提醒：如需设置，请进boxjs设置或者设置环境变量\n`)
-                    $.message += `【余额提醒】：如需设置，请进boxjs设置或者设置环境变量\n`;
+                    console.log(`余额提醒：没钱，跑了！\n`)
+                    $.message += `【余额提醒】：没钱，跑了！\n`;
 
 
                 } else if ($.xjsy.data && $.xjsy.data.isWithdrawalToday != false) {

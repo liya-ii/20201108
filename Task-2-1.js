@@ -14,6 +14,8 @@ const doubleSignApi = 'CommonReward/toDouble.json';
 //const CryptoJS = require('./crypto-js')
 //let basicApi = 'CommonReward/toGetReward.json',signBody = 'p=rXU6PBNNsHKc=ForGprwD-04dLgfLhY6RGeX-xYK9ZeSCC71w5svlfJomboBHefRzQ5Pg8NMNd5XdIerqkixI50mDIHNrzlwXJFsidSPMTMBoJCb_RcJeKb5iCgmKXmERExkbBL_L_kWjBIP0PaBXvjnRyviG33GBUoB2Z5i6nGLY0F8JccXkqvjelbXwjaoTe3z_DYzCV6Z62FAYPvTJ2iH05bLgQGrDFEv1haDpOTP1oMGRxrJdhN1HmGDDCDWBtLavarNx1s_mKIoTCQdEMrMQlJ9N_YBg3ruxehClZqFpaA7b7OynGbHzZFTQRLZE7D9FqfYVS8xcah4GZzvE7D5SGO-RWDb7rEwVZmT4SCfWt4WfLr0XPY24opz0bGLFOq6YhxAO96Ryeke7zF1t1Oh6h9SA0ngLuqMpOnOFwyVWtBkIYMxqNsdF_T0gwe8Cch967I5kxr6ApM2RV8eOtn0JEQf5NPLPxBbed4aUry3MfRWHtt3mm-xBNXof3_usqQeoMjox0H4SL3txx7BoEJQHasZDgKatmwpkgUspZR--G26CGdT9sx-sA4E4sH0QMPBl7O8OtAuVyw8IPJCUnU8Mrr05-PsW5v0Ei4Uicco1oDO11qptFdECPHI_qgDpEPP90y3xo3ezhHsVal_lVuifL5eP9m2ai47XV44sxPyBGx85NLDU85M4-e3ft4vDIr8idZ5fqRb5k3tVKfXde1-IDjcVpcWWKERawI0Bp3T29AJeG_qfGMNN-UattTGuRTnlSHsbJDva3DQ_V71klih3lIiwQGZo-Rl3AODtr95vE1HC8KmIZQ7NCgafZwzTr26zgT-I5tzsXAzNe1uqTh8EJraCZzI8iGyNaqJIxW1e0HbLhLnAwN-qrn1Vbk1dnmaReyV55lokgKP9hUlUzc54seaga6jeCI81Fv916e-n1ARvfIcYU4F70F0g5hSEgLTQsgLnjW1nLBRznVC1j_Hol2IMn7A-nXxYC5OoPwc96cWo9Id3XL7QFPn-ydoOv353m1zqGXwtGP0QMKIVBTH1Zdp-pM9hLm6igvhK68251vBIKJUBPjTYSHg-87ur9xGnMun5uF5FZVscMBIoyXQ_QdW4pDIH21Np9Y_JGAIaX6nPaDNw2uOd4L7Y0S0B_6m2W8fC9g2SNUrPF-ehSEuXUvwUjRccdEu8aA22NFVvpn91f75eCy1nTYZNbtZPXg==E';
 //let doubleSignApi = 'CommonReward/toDouble.json',doubleSignBody = 'p=ycTMBiVxDAfc=-Z4t1n9xCHViTEixuAOYRqfylSrDl_tcUQepJ95w98Z5zE2fG97uGoVdkz8FuWpk4kUIsluOXqCO2of-hoinO2C-x-xemO6g43h4k1MM9g2ly5G7Ln5olyn1B9YmXv2ZZWlzlte0mkzEeWXQGOQ3zcIpm2mfRVOPWSo4Mh4bKht7l0Ow3yTv3UVbmon9M1fnz8uwtYzDlZ_YFZfiKgCXYOvIw02ITru1Af3g7GvZGRLR5oW8HwO33Xecefb7SAAnNCVxYgrD38UctoQ4p-WKpgFwxjsi6Gb8mkqNMNeMlsHIgSxB8BK7gnvyasfOJD1LsU0r8ipq-RTRz3qSdCkOu77dY83JIa4MudkVHY6gSq2HX5p_N1d17I3d2KvFlE4rAkAvKNhVPNvcwU-fNj-L7oVPau7qqLwhELys_WkTP5BvQi2Q3ZCW8TMeDbAozzJPJA1_g-v2k7gc9HLZ31N-Wrp_pl9bls1vjwkwT1MZdCzXXeA7tCVSYAWcSpPoD57loaAA5xcsnNiXUSQG5ACO7777dWoYFYh-lrM6Wvsrf3dqHtlAYf2pXFiZcTYGEGp1cILpyg5pDLfb34kuUyyOGWpjAz3daBZzkbBIwk2rUdDhHhZ8igaJZnxUDcpjHsmOZm6qZvreVcI1PACLhvbHF0QPLIXO7qHDEI-yEu5NJD9BQVdWuJcbLBnK_jEHjDHUiAPJFCEmQXDc63RjqGMVOB-0pChV-90JJB7YX_Y4ymruOo5zn6GPrXfNetGFa9zEZa-k4eUXg6i5CnXYcF00rV6ql8Cz-rR2hl-UD-0eJMRfp2UYUXUUOKLogYCUlmAbG1gHUqAI-SsyAgGnS0iWZ9i2_M3On19LsipayqaJXrjhv1HuJAdUXxUxpd-TBUtL-Rns9-8lQfBYNQs-uicglIz9QCSXvtP7ZTLj1CUTe-QXfF5-dy61WRsKqFSfltXOgEEnePfUlwj6TGSJDO51zRur6jDslRNIOS9dqVEbFIr2BDHoiPGIMRVg1Sv00_TaqxbpPB6lMc6NzQq1Hye9xqy8R_7bibFFva4wjLuUpvyHWBOQa6H9k8iJ1GUkgu1zdv91sFRED7tOPH9UsHTAP3Zlnq-lw7HEa3vOf3vLlA21-yQSEVWOkw1qmuseaWNSD0VqkI0oBnF_okjrQbcJjlJVVSzlnV7XoSI-cDjpgNFxH8vtvn_R6ruRLLeiq_gku';
+let scApi = 'user/stay.json',scBody = 'p=bYdVi_XPUOzA=cAnw_9nbsumVjGd2xUAO-byDAKZoR7R7apJvLEYgmcV76n1BRVS_1c83XMSZqR1lyJ6Se0xRvmrhvEgiVWvJPS4O4KhKJCStXG0ZKwJqhksGL-dZRuTGRDgClcPHUFnvwhbCBo9b777ePy5O3HO3w-qSJ-Kz8KWlapqf4CqSVcabwL3I0jzxFCOOL90fghbGYAN6zqRE74Tw-du9ay1aHBE_mXEIRta9-UoAponuqNCMZZf4UFnS2rLxXQDCh-aYwai8EzwEgJrcrFEbhhpa6T5XV3cVVmY-7GAtIWNLVOuPmRcdImxIV5foEmerbCwT1ho_F_c4LJaH6e8W1UVxdt3K1ERjwSWArREDjcZ0r25Rvk0xXSCyl1F-f43CobVPZWfk15arZGk-tqfYTHuPqFcBEE_sY8jMX2I3XieOxeBBom56B_RR0ThWVhPMPJgSxQ7KonqO1vceOgpX0eLKf2NICY_AvJiG5PxKugd4_Ap6a1NqhGZFPEnw-tKiXwftqYD-2MRC5hakAa_pz7C1m_vlgfsxfdI_ayYZaaZT_TcE-4NCNTVrRwoPH1gin4gN1pb2xveAHmaPqgvA74xXput5C89wKjTOkpaf5zpYRPpVrjkbxV1oZaoQ7x7RN9oFoOM9GqKwvL_Uo7yNowWn6BOj66Fss22HDmO9OJpQbY5ywni3giKmMo_ewGzbzEM9TGdYllXkNt-GCoMXnRAhJmpFSVIA6tpVzW6G7BdvQYwLcsGbJ6kf-BVusYrBLViGJEu-AcKJHqd8iGe3TH7JPmNpyAHAAfDsDeGKYTmKswyKRLMPcIF3eBEyagkrNP9QFBBQUQaVeX08ZhmPRCBCrpXKUsZffYL74drMhiyanb3PfNX4MPxXDp_BKWG5Ib-N5Or5k6F71V1qn8z3tz3cNGBw7oRc23R2HWQyIGAnVOq0tNpcIV1kWIxrq7ZsFACCpGjts857ZHHkI7H1eoOVnhzOvx07EGH_6rzAZmm88Ra6PY1CLe4RWs3gVTrH--JQsIiURqnR7ultQZgDSw6GKbC-cyo3z4jHABXEj6PdU_pXh7c-KkEkGsOdWXHxMyFozcNXWr2AaokkJgeGppRFPXCCDAfVaD4qy_yDH_kY77tlRfATphHEdSR0-p-G2DQ5yGP0LArYy-o=HJ';
+    
 
 
 
@@ -23,7 +25,7 @@ let ts=true;	//推送开关
 let ishbfx=false;	//是否打开火爆分享，默认关闭
 let otherts=false;	//重要信息会自动打开推送，初始化状态是关闭
 
-let zqtoken="",zqcookie="",zquid="",zqsign="",zquuid="",rewardbody="",scBody="",cookie="",cookie_id="",syhburl="",fxbody="";
+let zqtoken="",zqcookie="",zquid="",zqsign="",zquuid="",rewardbody="",cookie="",cookie_id="",syhburl="",fxbody="";
 let urlArr=[],qdArr=[],boxArr=[];
 let rotaryscore=0, rotarytimes=0,doublerotary=0;
 //let jsonArr=[];
@@ -53,7 +55,7 @@ cookie=zqkey;
 cookie_id=zqkey_id;
 
 //时长body
-scBody=zqbody.staybody;
+//scBody=zqbody.staybody;
 //首页右上角视频奖励body，要单独抓
 syspbody=zqbody.syspbody;
 
@@ -846,7 +848,7 @@ function do_userdata() {
  //刷时长
  function do_sc(scbody) {
   return new Promise(resolve => {
-    $.post(basic("user/stay.json",scBody), (err, resp, data) => {
+    $.post(basic(scApi,scBody), (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)

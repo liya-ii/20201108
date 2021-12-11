@@ -119,7 +119,7 @@ async function taskall(){
 	}
 	await $.wait(1000);
 	//开签到宝箱
-	if (hour == 5){
+	if (hour == 0 || hour == 5){
 		await do_openbox(qdArr);
 	}
 	if (minute < 30) {		
@@ -202,7 +202,7 @@ async function taskall(){
 	await rotaryCheck();
 	}
 	
-	if (hour == 21){
+	if (hour == 0 || hour == 5 || hour == 23){
 		await do_openbox(boxArr);
 	}	
 	await do_userdata();
@@ -653,7 +653,7 @@ function rotary() {
 			  console.log(`\n抽奖失败,获得 ${rotaryres.data.score} 青豆！`)
 			  console.log(`剩余可抽奖次数：${rotaryres.data.remainTurn} 次`)
 			} else {
-				console.log(`\n抽奖失败：${JSON.stringify(rotaryres)}`)
+				console.log(`\n抽奖失败：${JSON.stringify(rotaryres.msg)}`)
 			}
                      } catch (e) {
                    $.logErr(e, resp);
@@ -857,11 +857,11 @@ function do_userdata() {
         } else {
           if (safeGet(data)) {
             const result = JSON.parse(data);
-			console.log(`刷时长结果：${JSON.stringify(result)}\n`)
+			console.log(`刷时长结果：${JSON.stringify(result.message)}\n`)
 			if (result.success == true) {
 				console.log(`刷入时长成功！`)
 			} else {
-				console.log(`刷入时长失败:${JSON.stringify(result)}`)
+				console.log(`刷入时长失败:${JSON.stringify(result.message)}`)
 			}
           }
         }
@@ -1006,7 +1006,7 @@ function do_toGetReward(rewardbody) {
 			if (result.success == true) {
 				console.log(`\n成功获得 ${result.items.score} 青豆！`)
           } else {
-			  console.log(`\n失败:${JSON.stringify(result)}`)
+			  console.log(`\n失败:${JSON.stringify(result.message)}`)
         }
       }
     }

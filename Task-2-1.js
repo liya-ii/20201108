@@ -848,7 +848,7 @@ function do_userdata() {
  //刷时长
  function do_sc(scbody) {
   return new Promise(resolve => {
-    $.post(basic(scApi,scBody), (err, resp, data) => {
+    $.post(basic1(scApi,scBody), (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
@@ -1226,6 +1226,19 @@ function basic(api,body) {
         'Connection': `keep-alive`,
         'Host': `kandian.wkandian.com`,
         'User-Agent': `okhttp/3.12.2`,
+	},
+    body: body
+  }
+}
+//basic1
+function basic1(api,body) {
+  return {
+    url: `${basicurl}v5/`+api,
+    headers: {
+        'device-platform': 'android',
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Length': '1197',
+        'Host': 'kandian.wkandian.com'
 	},
     body: body
   }

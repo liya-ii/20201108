@@ -846,7 +846,7 @@ function do_userdata() {
  //刷时长
  function do_sc(scbody) {
   return new Promise(resolve => {
-    $.post(basic("user/stay.json",scbody), (err, resp, data) => {
+    $.post(basic("user/stay.json",scBody), (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)

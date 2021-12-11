@@ -23,7 +23,7 @@ let ts=true;	//推送开关
 let ishbfx=false;	//是否打开火爆分享，默认关闭
 let otherts=false;	//重要信息会自动打开推送，初始化状态是关闭
 
-let zqtoken="",zqcookie="",zquid="",zqsign="",zquuid="",rewardbody="",scBody="",cookie="",cookie_id="",syhburl="",fxbody="";
+let zqtoken="",zqcookie="",zquid="",zqsign="",zquuid="",rewardbody="",scBody="p=bYdVi_XPUOzA=cAnw_9nbsumVjGd2xUAO-byDAKZoR7R7apJvLEYgmcV76n1BRVS_1c83XMSZqR1lyJ6Se0xRvmrhvEgiVWvJPS4O4KhKJCStXG0ZKwJqhksGL-dZRuTGRDgClcPHUFnvwhbCBo9b777ePy5O3HO3w-qSJ-Kz8KWlapqf4CqSVcabwL3I0jzxFCOOL90fghbGYAN6zqRE74Tw-du9ay1aHBE_mXEIRta9-UoAponuqNCMZZf4UFnS2rLxXQDCh-aYwai8EzwEgJrcrFEbhhpa6T5XV3cVVmY-7GAtIWNLVOuPmRcdImxIV5foEmerbCwT1ho_F_c4LJaH6e8W1UVxdt3K1ERjwSWArREDjcZ0r25Rvk0xXSCyl1F-f43CobVPZWfk15arZGk-tqfYTHuPqFcBEE_sY8jMX2I3XieOxeBBom56B_RR0ThWVhPMPJgSxQ7KonqO1vceOgpX0eLKf2NICY_AvJiG5PxKugd4_Ap6a1NqhGZFPEnw-tKiXwftqYD-2MRC5hakAa_pz7C1m_vlgfsxfdI_ayYZaaZT_TcE-4NCNTVrRwoPH1gin4gN1pb2xveAHmaPqgvA74xXput5C89wKjTOkpaf5zpYRPpVrjkbxV1oZaoQ7x7RN9oFoOM9GqKwvL_Uo7yNowWn6BOj66Fss22HDmO9OJpQbY5ywni3giKmMo_ewGzbzEM9TGdYllXkNt-GCoMXnRAhJmpFSVIA6tpVzW6G7BdvQYwLcsGbJ6kf-BVusYrBLViGJEu-AcKJHqd8iGe3TH7JPmNpyAHAAfDsDeGKYTmKswyKRLMPcIF3eBEyagkrNP9QFBBQUQaVeX08ZhmPRCBCrpXKUsZffYL74drMhiyanb3PfNX4MPxXDp_BKWG5Ib-N5Or5k6F71V1qn8z3tz3cNGBw7oRc23R2HWQyIGAnVOq0tNpcIV1kWIxrq7ZsFACCpGjts857ZHHkI7H1eoOVnhzOvx07EGH_6rzAZmm88Ra6PY1CLe4RWs3gVTrH--JQsIiURqnR7ultQZgDSw6GKbC-cyo3z4jHABXEj6PdU_pXh7c-KkEkGsOdWXHxMyFozcNXWr2AaokkJgeGppRFPXCCDAfVaD4qy_yDH_kY77tlRfATphHEdSR0-p-G2DQ5yGP0LArYy-o=HJ",cookie="",cookie_id="",syhburl="",fxbody="";
 let urlArr=[],qdArr=[],boxArr=[];
 let rotaryscore=0, rotarytimes=0,doublerotary=0;
 //let jsonArr=[];
@@ -53,7 +53,7 @@ cookie=zqkey;
 cookie_id=zqkey_id;
 
 //时长body
-scBody=zqbody.staybody;
+//scBody=zqbody.staybody;
 //首页右上角视频奖励body，要单独抓
 syspbody=zqbody.syspbody;
 
@@ -187,9 +187,9 @@ async function taskall(){
 	}
 	//打印开宝箱统计信息
 	if (rotaryres.status == 1) {
-		console.log(`转盘抽奖+${rotaryscore}个青豆 剩余${rotaryres.data.remainTurn}次\n`);
+		console.log(`\n转盘抽奖+${rotaryscore}个青豆 剩余${rotaryres.data.remainTurn}次`);
 	}else{
-		console.log(`转盘抽奖已用完\n`);
+		console.log(`\n转盘抽奖已用完`);
 	}
 	if (rotaryres.status !== 0&&rotaryres.data.doubleNum !== 0){
 		console.log(`转盘双倍+${doublerotary}青豆 剩余${rotaryres.data.doubleNum}次\n`);
